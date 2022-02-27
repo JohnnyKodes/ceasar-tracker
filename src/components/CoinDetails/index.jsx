@@ -58,7 +58,7 @@ const CoinDetails = () => {
     {
       title: "Total Supply",
       value: `${
-        cryptoDetails?.supply &&
+        cryptoDetails?.supply.total &&
         millify(cryptoDetails?.supply?.total, {
           precision: 3,
         })
