@@ -3,7 +3,7 @@ import images from "../constants/images";
 
 const Loader = () => {
   const spinTransition = {
-    loop: Infinity,
+    repeat: Infinity,
     ease: "linear",
     duration: 1,
   };

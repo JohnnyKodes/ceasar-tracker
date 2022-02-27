@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import millify from "millify";
 import { Link } from "react-router-dom";
 
-const CryptoCard = ({ crypto, simplified }) => {
+const CryptoCard = ({ key, crypto, simplified }) => {
   return (
-    <Link to={`/crypto/${crypto.uuid}`}>
+    <Link key={key} to={`/crypto/${crypto.uuid}`}>
       <motion.div
         key={crypto.name}
         whileInView={{ opacity: 1 }}

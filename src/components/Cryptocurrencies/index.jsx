@@ -51,7 +51,7 @@ const Cryptocurrencies = ({ simplified }) => {
           className="grid 2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 grid-rows-1 gap-4 mb-4 w-full"
         >
           {cryptos?.map((crypto, index) => (
-            <CryptoCard crypto={crypto} />
+            <CryptoCard key={crypto.uuid} crypto={crypto} />
           ))}
         </motion.div>
       </div>

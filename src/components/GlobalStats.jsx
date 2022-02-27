@@ -36,7 +36,7 @@ const GlobalStats = ({ globalStats }) => {
       <div className="flex w-full items-center justify-center">
         <div className="grid sm:grid-cols-3 grid-cols-2 mt-5 gap-4">
           {stats.map(({ title, value }) => (
-            <div className="m-auto text-center">
+            <div key={title + value} className="m-auto text-center">
               <p className="text-lg text-white">{title}</p>
               <p className="text-transparent bg-clip-text bg-gradient-to-br from-yellow-300 to-yellow-500 text-2xl">
                 {value}
